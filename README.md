@@ -7,5 +7,6 @@ Technologies:
 - Swing
 - Java
 
-## 📱🕹️🐤 `Pacman`
-![image](https://github.com/user-attachments/assets/0baf959e-28b9-498e-ba48-9f4861f87af3)
+## 🎮🕹️👾 `Pacman`
+![image](https://github.com/user-attachments/assets/66946c8e-57d1-433d-9f8a-860a49eddc10)
+
