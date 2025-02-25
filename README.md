@@ -7,5 +7,5 @@ Technologies:
 - Swing
 - Java
 
-## 📱🕹️🐤 `Flappy Bird`
+## 📱🕹️🐤 `Pacman`
 ![image](https://github.com/user-attachments/assets/0baf959e-28b9-498e-ba48-9f4861f87af3)
