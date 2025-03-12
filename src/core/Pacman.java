@@ -24,10 +24,10 @@ public class Pacman {
     }
 
     public void updateDirection(char newDirection) {
-        // Atualiza a direção e a velocidade
+        // updating direction and speed
         this.direction = newDirection;
         updateVelocity();
-        // Move o Pacman de acordo com a velocidade
+        // pacman's speed
         this.x += this.velocityX;
         this.y += this.velocityY;
     }

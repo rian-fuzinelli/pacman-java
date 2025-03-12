@@ -23,7 +23,7 @@ public class Ghost {
         this.height = height;
         this.startX = x;
         this.startY = y;
-        // Direção inicial aleatória
+        // random beginning direction
         char[] directions = {'U', 'D', 'L', 'R'};
         this.direction = directions[random.nextInt(4)];
         updateVelocity();
@@ -55,7 +55,7 @@ public class Ghost {
     public void reset() {
         this.x = startX;
         this.y = startY;
-        // Sorteia uma nova direção
+        // random a new direction
         char[] directions = {'U', 'D', 'L', 'R'};
         this.direction = directions[random.nextInt(4)];
         updateVelocity();

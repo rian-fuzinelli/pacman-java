@@ -25,9 +25,9 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
     private Image pacmanLeftImage;
     private Image pacmanRightImage;
 
-    // Mapa de tiles:
-    // X = parede, O = pular, P = Pacman, ' ' = comida
-    // Fantasmas: b = azul, o = laranja, p = rosa, r = vermelho
+    // tilesMap:
+    // X = wall, O = skip, P = Pacman, ' ' = food
+    // Ghosts: b = blue, o = orange, p = pink, r = red
     private String[] tileMap = {
             "XXXXXXXXXXXXXXXXXXX",
             "X        X        X",
@@ -70,7 +70,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
         addKeyListener(this);
         setFocusable(true);
 
-        // Carrega as imagens
+        // loading images
         wallImage = new ImageIcon("res/wall.png").getImage();
         blueGhostImage = new ImageIcon("res/blueGhost.png").getImage();
         orangeGhostImage = new ImageIcon("res/orangeGhost.png").getImage();
@@ -84,7 +84,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
 
         loadMap();
 
-        // Define direção aleatória para cada fantasma
+        // random position for Ghosts
         for (Ghost ghost : ghosts) {
             char newDirection = directions[random.nextInt(4)];
             ghost.updateDirection(newDirection);
@@ -161,7 +161,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
     }
 
     public void move() {
-        // Movimento do Pacman
+        // pacman's movement
         pacman.x += pacman.velocityX;
         pacman.y += pacman.velocityY;
         for (Wall wall : walls) {
@@ -173,7 +173,6 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
             }
         }
 
-        // Movimento dos fantasmas
         for (Ghost ghost : ghosts) {
             if (collision(ghost.x, ghost.y, ghost.width, ghost.height,
                     pacman.x, pacman.y, pacman.width, pacman.height)) {
@@ -202,7 +201,7 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
             }
         }
 
-        // Colisão com a comida
+        // food collision
         Food foodEaten = null;
         for (Food food : foods) {
             if (collision(pacman.x, pacman.y, pacman.width, pacman.height,
@@ -270,7 +269,6 @@ public class GamePanel extends JPanel implements ActionListener, KeyListener {
         } else if (key == KeyEvent.VK_RIGHT) {
             pacman.updateDirection('R');
         }
-        // Atualiza a imagem do Pacman conforme a direção
         if (pacman.direction == 'U') {
             pacman.image = pacmanUpImage;
         } else if (pacman.direction == 'D') {
