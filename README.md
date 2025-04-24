@@ -23,7 +23,7 @@ _Run the project locally by following the steps below 👇_
    cd pacman-java
    ```
 
-## 🚀 Usage
+## 🚀 Result
 ![image](https://github.com/user-attachments/assets/66946c8e-57d1-433d-9f8a-860a49eddc10)
 
 ## 📄 Top Contribuitor & License
