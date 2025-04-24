@@ -26,7 +26,13 @@ _Run the project locally by following the steps below 👇_
 ## 🚀 Usage
 ![image](https://github.com/user-attachments/assets/66946c8e-57d1-433d-9f8a-860a49eddc10)
 
-## 📄 License
+## 📄 Top Contribuitor & License
+
+<img src="https://avatars.githubusercontent.com/u/144074554?v=4"
+     style="width: 100px; height: 100px; border-radius: 50% !important; border: 3px solid red !important;"
+     alt="Avatar">
+
+
 
 Distributed under the [MIT License](https://opensource.org/licenses/MIT).
 
