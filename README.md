@@ -29,7 +29,7 @@ _Run the project locally by following the steps below 👇_
 ## 📄 Top Contribuitor & License
 
 <img src="https://avatars.githubusercontent.com/u/144074554?v=4"
-     style="width: 100px; height: 100px; border-radius: 50% !important; border: 3px solid red !important;"
+     style="width: 80px; height: 80px; border-radius: 50%; border: 2px solid #ccc; object-fit: cover;"
      alt="Avatar">
 
 
